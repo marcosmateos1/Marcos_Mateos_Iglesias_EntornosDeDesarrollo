@@ -1,42 +1,23 @@
 public class MMI_Circulo {
-    private int id;
     private double radio;
     private String color;
-
-
-    // Constructor por defecto
-    public MMI_Circulo() {
-    }
-
-
-    // Constructor con parámetros (sin id)
-    public MMI_Circulo(int id, double radio, String color) {
-            this.id = id;
+    private static final double PI = 3.14159265; // Evita el número mágico
+    
+    public MMI_Circulo(double radio, String color) {
             this.radio = radio;
             this.color = color;
         }
-
-    // Getters y Setters
-    public double getRadio() {
-        return radio;
-    }
-
-    public void setRadio(double radio) {
-        this.radio = radio;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    // Método toString()
-    @Override
+    
+    public double getRadio() { return radio; }
+    
+    public double calcularArea() {
+            return radio * radio * PI; // Usamos la constante en lugar del número mágico
+        }
+    
+        @Override
     public String toString() {
-        return "MMI_Circulo [id=" + id + ", radio=" + radio + ", color=" + color + "]";
+            return "Círculo de color " + color + " con radio " + radio;
+        }
     }
-
-}
+        ///@author Marcos
+        /// @version 1.0

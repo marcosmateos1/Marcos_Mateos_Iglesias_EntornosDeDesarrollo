@@ -59,3 +59,5 @@ public class MMI_Rectangulo {
                '}';
     }
 }
+        ///@author Marcos
+        /// @version 1.0
